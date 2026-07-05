@@ -1,0 +1,368 @@
+[
+  {
+    "__color": "#34272c",
+    "name": "classes",
+    "__userData": {
+      "__save_options": {
+        "__storeChildsAsObject": 0
+      }
+    },
+    "__size": [
+      100,
+      100,
+      1,
+      1
+    ],
+    "__ofs": [
+      -231,
+      -19
+    ],
+    "__childs": [
+      {
+        "__color": "#464ca1",
+        "name": "__finger",
+        "__size": [
+          157,
+          139
+        ],
+        "__ofs": [
+          -89,
+          -277,
+          -30
+        ],
+        "__childs": [
+          {
+            "__behaviour": "hint",
+            "__rotate": 10,
+            "__img": "Hand.png",
+            "__size": [
+              94,
+              106
+            ],
+            "__ofs": [
+              46,
+              -28
+            ]
+          },
+          {
+            "name": "__label",
+            "sha": 1,
+            "sva": 0,
+            "__size": [
+              1,
+              40
+            ],
+            "__text": {
+              "__text": "finger"
+            },
+            "__y": -41
+          }
+        ]
+      },
+      {
+        "__color": "#464ca1",
+        "name": "__bt_play",
+        "__size": [
+          330,
+          139
+        ],
+        "__ofs": [
+          -15,
+          -503,
+          -30
+        ],
+        "__childs": [
+          {
+            "__behaviour": "play_button",
+            "__padding": [
+              0,
+              20,
+              7,
+              20
+            ],
+            "__img": "button_1.png",
+            "__size": [
+              0.9,
+              62
+            ],
+            "__text": {
+              "__fontsize": 30,
+              "__autoscale": 1
+            },
+            "__keyframes": {
+              "__track": {}
+            }
+          },
+          {
+            "name": "__label",
+            "sha": 1,
+            "sva": 0,
+            "__size": [
+              1,
+              40
+            ],
+            "__text": {
+              "__text": "bt_play"
+            },
+            "__y": -41
+          }
+        ]
+      },
+      {
+        "__color": "#464ca1",
+        "name": "select_cell",
+        "__size": [
+          330,
+          139
+        ],
+        "__ofs": [
+          442,
+          -503,
+          -30
+        ],
+        "__childs": [
+          {
+            "__color": "#e6dfdd",
+            "__img": "ImageFrame.png",
+            "__size": [
+              100,
+              100
+            ],
+            "__text": {
+              "__fontsize": 30,
+              "__autoscale": 1,
+              "__shadow": [
+                2,
+                2
+              ]
+            },
+            "__keyframes": {
+              "__track": {}
+            },
+            "__childs": [
+              {
+                "__behaviour": "play_button",
+                "__img": "ImageFrame.png",
+                "__size": [
+                  0.95,
+                  0.95
+                ],
+                "__text": {
+                  "__fontsize": 30,
+                  "__autoscale": 1
+                },
+                "__keyframes": {
+                  "__track": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "__label",
+            "sha": 1,
+            "sva": 0,
+            "__size": [
+              1,
+              40
+            ],
+            "__text": {
+              "__text": "select_cell"
+            },
+            "__y": -41
+          }
+        ]
+      },
+      {
+        "__color": "#464ca1",
+        "name": "color_select",
+        "__size": [
+          330,
+          139
+        ],
+        "__ofs": [
+          874,
+          -503,
+          -30
+        ],
+        "__childs": [
+          {
+            "__color": "#d4e644",
+            "__padding": [
+              3,
+              9,
+              7,
+              7
+            ],
+            "__img": "UI_CircleElements.png",
+            "__size": [
+              50,
+              50
+            ],
+            "__text": {
+              "__color": 0,
+              "__fontsize": 30,
+              "__lineWidth": 3,
+              "__lineColor": "#fff",
+              "__text": "12345",
+              "__autoscale": 1,
+              "__autoRecalcOnResize": true
+            },
+            "__z": -12,
+            "__keyframes": {
+              "__track": {}
+            }
+          },
+          {
+            "name": "__label",
+            "sha": 1,
+            "sva": 0,
+            "__size": [
+              1,
+              40
+            ],
+            "__text": {
+              "__text": "color_select"
+            },
+            "__y": -41
+          }
+        ]
+      },
+      {
+        "__color": "#464ca1",
+        "name": "tap_to_color",
+        "__size": [
+          1052,
+          174
+        ],
+        "__ofs": [
+          668,
+          -271,
+          -30
+        ],
+        "__childs": [
+          {
+            "__size": [
+              1,
+              50
+            ],
+            "__scaleF": 0.98,
+            "__text": {
+              "__color": 0,
+              "__fontsize": 30,
+              "__lineWidth": 2,
+              "__lineColor": "#ffff",
+              "__text": "Tap to Color",
+              "__autoscale": 1
+            },
+            "__childs": [
+              {
+                "__behaviour": "hint",
+                "__rotate": 10,
+                "__img": "Hand.png",
+                "__size": [
+                  53,
+                  72
+                ],
+                "__ofs": [
+                  19,
+                  26,
+                  -1
+                ],
+                "__keyframes": {
+                  "__easing": 1,
+                  "__track": {
+                    "__transform": {
+                      "0": [
+                        40,
+                        50,
+                        1,
+                        1,
+                        10
+                      ],
+                      "54": [
+                        19,
+                        26,
+                        0.9,
+                        0.9,
+                        10
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "__label",
+            "sha": 1,
+            "sva": 0,
+            "__size": [
+              1,
+              40
+            ],
+            "__text": {
+              "__text": "tap_to_color"
+            },
+            "__y": -41
+          }
+        ]
+      },
+      {
+        "__color": "#464ca1",
+        "name": "color_select:selected",
+        "__size": [
+          330,
+          139
+        ],
+        "__ofs": [
+          1250,
+          -502,
+          -30
+        ],
+        "__childs": [
+          {
+            "__color": "#d4e644",
+            "__padding": [
+              3,
+              9,
+              7,
+              7
+            ],
+            "__img": "UI_CircleElements.png",
+            "__size": [
+              50,
+              50
+            ],
+            "__text": {
+              "__color": "#fffffe",
+              "__fontsize": 30,
+              "__lineWidth": 3,
+              "__lineColor": "#000",
+              "__text": "12345",
+              "__autoscale": 1,
+              "__autoRecalcOnResize": true,
+              "__colorString": "#fffffe"
+            },
+            "__z": -12,
+            "__keyframes": {
+              "__track": {}
+            }
+          },
+          {
+            "name": "__label",
+            "sha": 1,
+            "sva": 0,
+            "__size": [
+              1,
+              40
+            ],
+            "__text": {
+              "__text": "color_select:selected"
+            },
+            "__y": -41
+          }
+        ]
+      }
+    ]
+  }
+]

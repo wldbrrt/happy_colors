@@ -1,0 +1,652 @@
+[
+  {
+    "__color": "#fbdddd",
+    "name": "screen",
+    "__userData": {
+      "__alpha": 0.8
+    },
+    "__size": [
+      1,
+      1
+    ],
+    "__childs": {
+      "__bg": {
+        "__size": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "level": {
+        "__userData": {
+          "__duration": 0.01
+        },
+        "ha": 1,
+        "va": 3,
+        "__size": [
+          1,
+          1
+        ],
+        "__z": -10,
+        "__childs": {
+          "_0": {
+            "__size": [
+              1,
+              0,
+              1
+            ]
+          },
+          "__topLabel": {
+            "__behaviour": "apply_effect",
+            "__userData": {
+              "apply_effect": [
+                "__LEVEL_READY",
+                {
+                  "animOut": {
+                    "__anim_type": 1,
+                    "__scale": 1,
+                    "__duration": 0.2,
+                    "__delay": 0
+                  }
+                }
+              ]
+            },
+            "sha": 1,
+            "sva": 0,
+            "__size": [
+              1,
+              0.25
+            ],
+            "__text": {
+              "__color": 0,
+              "__fontsize": 40,
+              "__lineWidth": 1,
+              "__text": "Choose Category"
+            }
+          },
+          "__container": {
+            "__behaviour": "apply_effect",
+            "__userData": {
+              "apply_effect": [
+                "__LEVEL_READY",
+                {
+                  "animChildsOut": {
+                    "__anim_type": 2,
+                    "__duration": 0.2,
+                    "__delay": 0
+                  }
+                }
+              ]
+            },
+            "__padding": 10,
+            "sha": 1,
+            "sva": 1,
+            "__size": [
+              1,
+              0.5
+            ],
+            "__scaleF": 0.9,
+            "__childs": {
+              "_0": {
+                "__behaviour": "orchange",
+                "__userData": {
+                  "__landscape": {
+                    "__ofs": [
+                      -360,
+                      0
+                    ]
+                  },
+                  "__portrait": {
+                    "__ofs": [
+                      -140,
+                      -140
+                    ]
+                  }
+                },
+                "__padding": [
+                  20,
+                  20,
+                  29,
+                  20
+                ],
+                "sha": 1,
+                "sva": 1,
+                "__size": [
+                  300,
+                  300
+                ],
+                "__text": {
+                  "__fontsize": 30,
+                  "__autoscale": 1,
+                  "__shadow": [
+                    2,
+                    2
+                  ]
+                },
+                "__ofs": [
+                  -140,
+                  -140
+                ],
+                "__keyframes": {
+                  "__track": {}
+                },
+                "__childs": {
+                  "_wrapper1": {
+                    "__behaviour": "move_on_tap,tap_to_color",
+                    "__userData": {
+                      "__targetNode": "level",
+                      "__duration": 0.7,
+                      "__scaleDuration": 0.7,
+                      "tap_to_color": {
+                        "__anim_params": {
+                          "__anim_type": 2,
+                          "__duration": 0.5,
+                          "__delay": 0.7
+                        }
+                      }
+                    },
+                    "__padding": 1,
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__text": {
+                      "__fontsize": 30,
+                      "__autoscale": 1
+                    },
+                    "__z": -3,
+                    "__keyframes": {
+                      "__track": {}
+                    },
+                    "__childs": {
+                      "_animals": {
+                        "__color": "#b16dc4",
+                        "__behaviour": "happy_colour",
+                        "__userData": {
+                          "__dataPath": "happy_colour_001/bg/Animals.bin",
+                          "__cachPath": "bg/Animals.bin"
+                        },
+                        "sha": 1,
+                        "sva": 1,
+                        "__size": [
+                          1,
+                          1
+                        ],
+                        "__z": 1
+                      }
+                    }
+                  },
+                  "__mask": {
+                    "__color": "#fbdddd",
+                    "__img": "Exclude2.png",
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__z": -2
+                  },
+                  "_3": {
+                    "__img": "Label_Animals.png",
+                    "sha": 0,
+                    "sva": 0,
+                    "__size": [
+                      145,
+                      36
+                    ],
+                    "__ofs": [
+                      10,
+                      10,
+                      -2
+                    ]
+                  }
+                }
+              },
+              "_1": {
+                "__behaviour": "orchange",
+                "__userData": {
+                  "__landscape": {
+                    "__ofs": [
+                      -120,
+                      0
+                    ]
+                  },
+                  "__portrait": {
+                    "__ofs": [
+                      140,
+                      -140
+                    ]
+                  }
+                },
+                "__padding": [
+                  20,
+                  20,
+                  29,
+                  20
+                ],
+                "sha": 1,
+                "sva": 1,
+                "__size": [
+                  300,
+                  300
+                ],
+                "__text": {
+                  "__fontsize": 30,
+                  "__autoscale": 1,
+                  "__shadow": [
+                    2,
+                    2
+                  ]
+                },
+                "__ofs": [
+                  140,
+                  -140
+                ],
+                "__keyframes": {
+                  "__track": {}
+                },
+                "__childs": {
+                  "_wrapper2": {
+                    "__behaviour": "move_on_tap,tap_to_color",
+                    "__userData": {
+                      "__targetNode": "level",
+                      "__duration": 0.7,
+                      "__scaleDuration": 0.7,
+                      "tap_to_color": {
+                        "__anim_params": {
+                          "__anim_type": 2,
+                          "__duration": 0.5,
+                          "__delay": 0.7
+                        }
+                      }
+                    },
+                    "__padding": 1,
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__text": {
+                      "__fontsize": 30,
+                      "__autoscale": 1
+                    },
+                    "__z": -1,
+                    "__keyframes": {
+                      "__track": {}
+                    },
+                    "__childs": {
+                      "_anime": {
+                        "__color": "#b16dc4",
+                        "__behaviour": "happy_colour",
+                        "__userData": {
+                          "__dataPath": "happy_colour_001/bg/Anime.bin",
+                          "__cachPath": "bg/Anime.bin"
+                        },
+                        "sha": 1,
+                        "sva": 1,
+                        "__size": [
+                          1,
+                          1
+                        ],
+                        "__z": 1
+                      }
+                    }
+                  },
+                  "__mask": {
+                    "__color": "#fbdddd",
+                    "__img": "Exclude2.png",
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__z": -2
+                  },
+                  "_3": {
+                    "__img": "Label_Anime.png",
+                    "sha": 0,
+                    "sva": 0,
+                    "__size": [
+                      135,
+                      35
+                    ],
+                    "__ofs": [
+                      10,
+                      10,
+                      -2
+                    ]
+                  }
+                }
+              },
+              "_2": {
+                "__behaviour": "orchange",
+                "__userData": {
+                  "__landscape": {
+                    "__ofs": [
+                      120,
+                      0
+                    ]
+                  },
+                  "__portrait": {
+                    "__ofs": [
+                      140,
+                      140
+                    ]
+                  }
+                },
+                "__padding": [
+                  20,
+                  20,
+                  29,
+                  20
+                ],
+                "sha": 1,
+                "sva": 1,
+                "__size": [
+                  300,
+                  300
+                ],
+                "__text": {
+                  "__fontsize": 30,
+                  "__autoscale": 1,
+                  "__shadow": [
+                    2,
+                    2
+                  ]
+                },
+                "__ofs": [
+                  140,
+                  140
+                ],
+                "__keyframes": {
+                  "__track": {}
+                },
+                "__childs": {
+                  "_wrapper3": {
+                    "__behaviour": "move_on_tap,tap_to_color",
+                    "__userData": {
+                      "__targetNode": "level",
+                      "__duration": 0.7,
+                      "__scaleDuration": 0.7,
+                      "tap_to_color": {
+                        "__anim_params": {
+                          "__anim_type": 2,
+                          "__duration": 0.5,
+                          "__delay": 0.7
+                        }
+                      }
+                    },
+                    "__padding": 1,
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__text": {
+                      "__fontsize": 30,
+                      "__autoscale": 1
+                    },
+                    "__z": -1,
+                    "__keyframes": {
+                      "__track": {}
+                    },
+                    "__childs": {
+                      "_fantasy": {
+                        "__color": "#b16dc4",
+                        "__behaviour": "happy_colour",
+                        "__userData": {
+                          "__dataPath": "happy_colour_001/bg/Fantasy.bin",
+                          "__cachPath": "bg/Fantasy.bin"
+                        },
+                        "sha": 1,
+                        "sva": 1,
+                        "__size": [
+                          1,
+                          1
+                        ],
+                        "__z": 1
+                      }
+                    }
+                  },
+                  "__mask": {
+                    "__color": "#fbdddd",
+                    "__img": "Exclude2.png",
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__z": -2
+                  },
+                  "_3": {
+                    "__img": "Label_Fantasy.png",
+                    "sha": 0,
+                    "sva": 0,
+                    "__size": [
+                      118,
+                      36
+                    ],
+                    "__ofs": [
+                      10,
+                      10,
+                      -2
+                    ]
+                  }
+                }
+              },
+              "_3": {
+                "__behaviour": "orchange",
+                "__userData": {
+                  "__landscape": {
+                    "__ofs": [
+                      360,
+                      0
+                    ]
+                  },
+                  "__portrait": {
+                    "__ofs": [
+                      -140,
+                      140
+                    ]
+                  }
+                },
+                "__padding": [
+                  20,
+                  20,
+                  29,
+                  20
+                ],
+                "sha": 1,
+                "sva": 1,
+                "__size": [
+                  300,
+                  300
+                ],
+                "__text": {
+                  "__fontsize": 30,
+                  "__autoscale": 1,
+                  "__shadow": [
+                    2,
+                    2
+                  ]
+                },
+                "__ofs": [
+                  -140,
+                  140
+                ],
+                "__keyframes": {
+                  "__track": {}
+                },
+                "__childs": {
+                  "_wrapper4": {
+                    "__behaviour": "move_on_tap",
+                    "__userData": {
+                      "__targetNode": "level",
+                      "__isMandala": true,
+                      "__duration": 0.7,
+                      "__scaleDuration": 0.7
+                    },
+                    "__padding": 1,
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__text": {
+                      "__fontsize": 30,
+                      "__autoscale": 1
+                    },
+                    "__z": -1,
+                    "__keyframes": {
+                      "__track": {}
+                    },
+                    "__childs": {
+                      "_mandalas": {
+                        "__color": "#b16dc4",
+                        "__behaviour": "happy_colour",
+                        "__userData": {
+                          "__dataPath": "happy_colour_001/bg/Mandalas.bin",
+                          "__cachPath": "bg/Mandalas.bin",
+                          "__useSelectedColor": true
+                        },
+                        "sha": 1,
+                        "sva": 1,
+                        "__size": [
+                          1,
+                          1
+                        ],
+                        "__z": 1
+                      }
+                    }
+                  },
+                  "__mask": {
+                    "__color": "#fbdddd",
+                    "__img": "Exclude2.png",
+                    "__size": [
+                      1,
+                      1
+                    ],
+                    "__z": -2
+                  },
+                  "_3": {
+                    "__img": "Label_Mandalas.png",
+                    "sha": 0,
+                    "sva": 0,
+                    "__size": [
+                      145,
+                      36
+                    ],
+                    "__ofs": [
+                      10,
+                      10,
+                      -2
+                    ]
+                  }
+                }
+              },
+              "__tutor": {
+                "__color": "#d66f7f",
+                "__propertyBinding": "happy_color_tutor",
+                "__behaviour": "tutorial",
+                "__numericInputStep": "0",
+                "__size": [
+                  100,
+                  100
+                ],
+                "__text": {
+                  "__text": "tutorial"
+                },
+                "__ofs": [
+                  -409,
+                  -29
+                ]
+              }
+            }
+          },
+          "__botLabel": {
+            "__behaviour": "apply_effect",
+            "__userData": {
+              "apply_effect": [
+                "__LEVEL_READY",
+                {
+                  "animOut": {
+                    "__anim_type": 1,
+                    "__scale": 1,
+                    "__duration": 0.2,
+                    "__delay": 0
+                  }
+                }
+              ]
+            },
+            "sha": 1,
+            "sva": 2,
+            "__size": [
+              1,
+              0.25
+            ],
+            "__text": {
+              "__color": 0,
+              "__fontsize": 40,
+              "__lineWidth": 1,
+              "__text": "Happy Color"
+            }
+          }
+        }
+      },
+      "__colorsPanel": {
+        "__color": 0.9569,
+        "__behaviour": "colors_panel",
+        "__padding": [
+          15,
+          30,
+          10,
+          30
+        ],
+        "__img": "ImageFrame.png",
+        "ha": 3,
+        "va": 3,
+        "sha": 1,
+        "sva": 2,
+        "__tableAlignRows": 1,
+        "__tableAlignColumns": 3,
+        "__tableAlignColumnWidth": 100,
+        "__tableAlignRowHeight": 0.3,
+        "__corner": [
+          -32,
+          0
+        ],
+        "__size": [
+          1,
+          80,
+          "o"
+        ],
+        "__ofs": [
+          0,
+          200,
+          -20
+        ],
+        "__childs": {
+          "__tutor": {
+            "__color": "#d66f7f",
+            "__propertyBinding": "point_node",
+            "__behaviour": "tutorial",
+            "__numericInputStep": "1",
+            "__userData": {
+              "__nodeNames": [
+                "_colorItem_0",
+                "_mandalas",
+                "_colorItem_1"
+              ]
+            },
+            "__size": [
+              100,
+              100
+            ],
+            "__text": {
+              "__text": "tutorial"
+            },
+            "__ofs": [
+              -409,
+              -29
+            ]
+          }
+        }
+      }
+    }
+  }
+]

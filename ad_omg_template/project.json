@@ -1,0 +1,725 @@
+{
+    "buildFlags": {
+        "VERSION": "0.10.54",
+        "CONF_LEVEL": "level.json",
+        "SUBPROJECT": "happy_colour_001",
+        "PROJ_DIR": "$SUBPROJECT",
+        "BUILD_DIR": "builds/$SUBPROJECT/$VERSION",
+        "CHEATS": true,
+        "LANG": "auto",
+        "STATIC_URL": "https://static.openmygame.com",
+        "STATIC_PATH": "playableAds/$SUBPROJECT/$VERSION/",
+        "IS_AUTO_LANG": true,
+        "AD_FONT_1": "poppins_regular"
+    },
+    "head": {
+        "title": "ad_template",
+        "meta": {
+            "viewport": "width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale:1.0",
+            "apple-mobile-web-app-capable": "yes",
+            "mobile-web-app-capable": "yes"
+        }
+    },
+    "packing": [
+        {
+            "LANG": "auto",
+            "AD_FONT_1": "poppins_regular_auto"
+        }
+    ],
+    "redirect_url": {
+        "ios": "https://apps.apple.com/us/app/happy-color-by-numbers-game/id1407852246",
+        "android": "https://play.google.com/store/apps/details?id=com.pixel.art.coloring.color.number&hl=ru"
+    },
+    "src": {
+        "../../eeditor/engine/": [
+            "3rdparty/es6-shim.js",
+            "3rdparty/bowser.js",
+            "globals.js",
+            "bus.js",
+            "wfont.js",
+            "basicTypes.js",
+            "renderer.js",
+            "object3d.js",
+            "camera.js",
+            "events.js",
+            "node.js",
+            "engine.js",
+            "tweens.js",
+            "html.js",
+            "loadtasks.js",
+            "localization.js",
+            "text.js",
+            "timer.js",
+            "shadow.js",
+            "windows.js"
+        ],
+        "src/": [
+            "binDataToMeshBuffers.js",
+            "effects.js",
+            "loading.js",
+            "main.js",
+            "misc.js",
+            "cheats.js"
+        ],
+        "src/behaviours/": [
+            "tutorial.js",
+            "congrat.js",
+            "hint.js",
+            "play_button.js",
+            "orchange.js",
+            "apply_effect.js",
+            "happy_colour.js",
+            "move_on_tap.js",
+            "tap_to_color.js",
+            "colors_panel.js"
+        ]
+    },
+    "plugins": [
+        "project/src/plugin/plugin.js"
+    ],
+    "options": {
+        "__disableCache": 1,
+        "__disableCacheByVer": 1,
+        "__storeChildsAsObject": 1,
+        "__disableXHRRequests": 0,
+        "__supportedLangs": [
+            "ru"
+        ],
+        "__defaultTextProperties": {
+            "__fontface": "$AD_FONT_1"
+        },
+        "__baseFontsFolder": "../fonts/",
+        "__localesDir": "../lang/",
+        "__disablePacking": 1,
+        "__projectServerPath": "happy_colour_001/",
+        "__baseShadersFolder": "../shaders/"
+    },
+    "options_prod": {
+        "__disableCache": 0,
+        "__disableCacheByVer": 0,
+        "__storeChildsAsObject": 0,
+        "__disableXHRRequests": 1,
+        "__supportedLangs": [
+            "ru"
+        ],
+        "__defaultTextProperties": {
+            "__fontface": "$AD_FONT_1"
+        },
+        "__baseFontsFolder": "build_res/",
+        "__localesDir": "lang/",
+        "__disablePacking": 1,
+        "__projectServerPath": "happy_colour_001/"
+    },
+    "res": [
+        [
+            "locale"
+        ],
+        [
+            "atlas",
+            "build_res/atlas-$LANG-0.png",
+            "build_res/atlas-$LANG-0.json"
+        ],
+        [
+            "config",
+            {
+                "path": "level.json",
+                "alias": "level"
+            }
+        ],
+        [
+            "class",
+            "classes.json"
+        ],
+        [
+            "shaders",
+            "base_ca.f",
+            "base_ca.v",
+            "base_tex.f",
+            "base_tex.v",
+            "base.f",
+            "base.v",
+            "blur.f",
+            "c.f",
+            "c.v",
+            "ca.f",
+            "ca.v",
+            "color.f",
+            "effect_blur4.f",
+            "fillwords_back.f",
+            "fillwords_back.v",
+            "fillwords_mask.f",
+            "fillwords_mask.v",
+            "fillwords.f",
+            "fillwords.v",
+            "flow_glow.f",
+            "flow_glow.v",
+            "gold_text.f",
+            "part.f",
+            "part.v",
+            "partnc.f",
+            "partnc.v",
+            "puzzle_match.f",
+            "puzzle_match.v",
+            "puzzle_mix_video.f",
+            "puzzle_mix_video.v",
+            "puzzle_mix.f",
+            "puzzle_mix.v",
+            "radial.f",
+            "sector_border_crop.f",
+            "sectorCrop.f",
+            "snow.f",
+            "texturemix1.f",
+            "texturemix1.v"
+        ],
+        [
+            "font",
+            "$AD_FONT_1.ttf"
+        ],
+        [
+            "layout",
+            "congrat.json",
+            "main.json"
+        ]
+    ],
+    "build_targets": {
+        "SVG_BIN": [
+            {
+                "type": "copy",
+                "src": "$PROJ_DIR/bg/*.bin",
+                "dst": "$PROJ_DIR/build_res/"
+            }
+        ],
+        "SOUNDS": [
+            {
+                "type": "sounds",
+                "src": "$PROJ_DIR/sounds/*",
+                "dst": "$PROJ_DIR/build_res/"
+            }
+        ],
+        "ATLAS": [
+            {
+                "type": "atlas",
+                "name": "atlas-$LANG",
+                "width": 2048,
+                "height": 2048,
+                "src": [
+                    "$PROJ_DIR/img/*.*",
+                    "$PROJ_DIR/img/$LANG/*.*"
+                ],
+                "dst": "$PROJ_DIR/build_res/",
+                "format": "short",
+                "arrayFormat": 1,
+                "packerMethod": 1
+            }
+        ],
+        "LOC_ATLASES": [
+            {
+                "type": "each",
+                "src": "@/packing",
+                "target": "ATLAS"
+            }
+        ],
+        "DATA": [
+            {
+                "type": "file",
+                "name": "opts.json",
+                "dst": "$PROJ_DIR/build_res/",
+                "content": {
+                    "options": "@/options_prod",
+                    "res": "@/res",
+                    "version": "$VERSION"
+                }
+            },
+            {
+                "type": "datacache",
+                "basedir": "$PROJ_DIR/",
+                "src": [
+                    "lang/$IS_AUTO_LANG?*:$LANG;.json",
+                    "$PROJ_DIR/build_res/$AD_FONT_1.ttf",
+                    "$PROJ_DIR/build_res/$AD_FONT_2.ttf",
+                    "$PROJ_DIR/layouts/*.json",
+                    "$PROJ_DIR/bg/*.jpg",
+                    "$PROJ_DIR/bg/*.mp4",
+                    "$PROJ_DIR/bg/*.png",
+                    "$PROJ_DIR/spine/*/*.atlas",
+                    "$PROJ_DIR/spine/*/*.png",
+                    "$PROJ_DIR/spine/*/*.skel",
+                    "$PROJ_DIR/conf/$CONF_LEVEL",
+                    "$PROJ_DIR/build_res/opts.json",
+                    "$PROJ_DIR/build_res/atlas-$LANG-0.json",
+                    "$PROJ_DIR/build_res/atlas-$LANG-0.png",
+                    "$PROJ_DIR/particles/*.*",
+                    "shaders/*",
+                    "$PROJ_DIR/build_res/sounds.json",
+                    "$PROJ_DIR/build_res/sounds.mp3",
+                    "$PROJ_DIR/bg/*.bin"
+                ],
+                "dst": "$PROJ_DIR/build_res/data-$LANG.js"
+            }
+        ],
+        "JSMINIFY": [
+            {
+                "type": "clean",
+                "src": "build_log.txt"
+            },
+            {
+                "type": "minify",
+                "advanced": 1,
+                "src": [
+                    "@/src",
+                    "$PROJ_DIR/build_res/data-$LANG.js"
+                ],
+                "dst": "$PROJ_DIR/build_res/min-$LANG.js",
+                "rmdebug": "debug/undebug,3d/no3d",
+                "myminify": 1,
+                "pretty": 0,
+                "wrap": 1,
+                "log": "build_log.txt"
+            },
+            {
+                "type": "clean",
+                "src": [
+                    "min_*.js",
+                    "$PROJ_DIR/build_res/data-$LANG.js"
+                ]
+            }
+        ],
+        "PRODUCTION": [
+            {
+                "type": "clean",
+                "src": "$BUILD_DIR/*"
+            },
+            {
+                "type": "target",
+                "src": [
+                    "_I_PACK"
+                ]
+            }
+        ],
+        "PRODUCTION_ALL": [
+            {
+                "type": "clean",
+                "src": "$BUILD_DIR/*"
+            },
+            {
+                "type": "target",
+                "src": [
+                    "PACK"
+                ]
+            }
+        ],
+        "_I_PACK": [
+            {
+                "type": "target",
+                "src": [
+                    "DATA",
+                    "JSMINIFY"
+                ]
+            },
+            {
+                "type": "file",
+                "name": "project_loc_$LANG.json",
+                "dst": "$BUILD_DIR/",
+                "content": {
+                    "version": "$VERSION",
+                    "pname": "$SUBPROJECT",
+                    "cheats": "$CHEATS",
+                    "langs": "@/options/__supportedLangs",
+                    "lang": "$LANG",
+                    "redirect_url": "@/redirect_url"
+                }
+            },
+            {
+                "type": "packIntoOneFile",
+                "dst": "$BUILD_DIR/packed/$LANG/$SUBPROJECT_loc_$LANG_v_$VERSION_UNDERSCORE.html",
+                "sourceFile": "build_res/index.html",
+                "src": {
+                    "/*min.js*/": "$PROJ_DIR/build_res/min-$LANG.js",
+                    "/*project.json*/": "$BUILD_DIR/project_loc_$LANG.json"
+                }
+            }
+        ],
+        "PACK": [
+            {
+                "type": "each",
+                "src": "@/packing",
+                "target": "_I_PACK"
+            },
+            {
+                "type": "packIntoOneFile",
+                "dst": "$BUILD_DIR/packed/index.html",
+                "sourceFile": "build_res/index_list.html",
+                "src": {
+                    "/*project.json*/": "$BUILD_DIR/project_loc_auto.json"
+                }
+            },
+            {
+                "type": "replaceinfile",
+                "dst": "$BUILD_DIR/packed/index.html",
+                "sourceFile": "$BUILD_DIR/packed/index.html",
+                "src": {
+                    "/*og_url*/": {
+                        "value": "$STATIC_URL/$STATIC_PATH",
+                        "mode": "str"
+                    },
+                    "/*og_title*/": {
+                        "value": "$SUBPROJECT v$VERSION $CHEATS?( cheats ):( prod );",
+                        "mode": "str"
+                    }
+                }
+            },
+            {
+                "type": "copy",
+                "src": "$PROJ_DIR/preview.jpg",
+                "dst": "$BUILD_DIR/packed/preview.jpg"
+            }
+        ],
+        "ALL": [
+            {
+                "type": "target",
+                "src": [
+                    "LOC_ATLASES",
+                    "SOUNDS",
+                    "PRODUCTION_ALL",
+                    "UPLOAD"
+                ]
+            }
+        ],
+        "DEBUG": [
+            {}
+        ],
+        "SETUP": [
+            {
+                "type": "command",
+                "command": "node get_project_json.js --log=debug --ad=$AD"
+            },
+            {
+                "type": "command",
+                "command": "make ATLAS && make SOUNDS"
+            },
+            {
+                "type": "command",
+                "command": "make FONT"
+            }
+        ],
+        "PARSE_SVG": [
+            {
+                "type": "command",
+                "command": "node get_svg_bin_data.js --log=debug"
+            }
+        ],
+        "OPTIMIZE_FONTS": [
+            {
+                "type": "command",
+                "command": "node get_subset_fonts.js --log=debug"
+            }
+        ],
+        "_I_PACK_ZIPS": [
+            {
+                "description": "Index packing loc $LANG",
+                "type": "zip",
+                "cwd": "$BUILD_DIR/packed/",
+                "src": {
+                    "$LANG/$SUBPROJECT_loc_$LANG_v_$VERSION_UNDERSCORE.html": "index.html"
+                },
+                "dst": "$LANG/$SUBPROJECT_loc_$LANG_v_$VERSION_UNDERSCORE.zip"
+            },
+            {
+                "description": "Bidease packing loc $LANG 1",
+                "_type": "packIntoOneFile",
+                "sourceFile": "build_res/index.html",
+                "dst": "tmp/Bidease_loc_$LANG_v_$VERSION_UNDERSCORE/index.html",
+                "src": {
+                    "<body>": "build_res/bidease_fragment.html",
+                    "/*project.json*/": "$BUILD_DIR/project_loc_$LANG.json"
+                }
+            },
+            {
+                "description": "Bidease packing loc $LANG 2",
+                "_type": "copy",
+                "src": "$PROJ_DIR/build_res/min-$LANG.js",
+                "dst": "tmp/Bidease_loc_$LANG_v_$VERSION_UNDERSCORE/"
+            },
+            {
+                "description": "Bidease packing loc $LANG 3",
+                "_type": "rename",
+                "src": "tmp/Bidease_loc_$LANG_v_$VERSION_UNDERSCORE/min-$LANG.js",
+                "dst": "tmp/Bidease_loc_$LANG_v_$VERSION_UNDERSCORE/min.js"
+            },
+            {
+                "description": "Bidease packing loc $LANG 4",
+                "_type": "zip",
+                "cwd": "tmp/Bidease_loc_$LANG_v_$VERSION_UNDERSCORE/",
+                "src": [
+                    "index.html",
+                    "min.js"
+                ],
+                "dst": "../../$BUILD_DIR/packed/$LANG/$SUBPROJECT_loc_$LANG_v_$VERSION_UNDERSCORE_Bidease.zip"
+            },
+            {
+                "description": "BGY packing loc $LANG 1",
+                "type": "packIntoOneFile",
+                "sourceFile": "$BUILD_DIR/packed/$LANG/$SUBPROJECT_loc_$LANG_v_$VERSION_UNDERSCORE.html",
+                "dst": "tmp/BGY_loc_$LANG_v_$VERSION_UNDERSCORE/index.html",
+                "src": {
+                    "<body>": "build_res/bgy_fragment.html"
+                }
+            },
+            {
+                "description": "BGY packing loc $LANG 2",
+                "type": "file",
+                "name": "config.json",
+                "dst": "tmp/BGY_loc_$LANG_v_$VERSION_UNDERSCORE/",
+                "content": {
+                    "orientation": 0
+                }
+            },
+            {
+                "description": "BGY packing loc $LANG 3",
+                "type": "zip",
+                "cwd": "tmp/BGY_loc_$LANG_v_$VERSION_UNDERSCORE/",
+                "src": [
+                    "index.html",
+                    "config.json"
+                ],
+                "dst": "../../$BUILD_DIR/packed/$LANG/$SUBPROJECT_loc_$LANG_v_$VERSION_UNDERSCORE_BGY.zip"
+            }
+        ],
+        "PACK_ZIPS": [
+            {
+                "type": "clean",
+                "src": [
+                    "tmp/BGY_*",
+                    "tmp/Bidease_*"
+                ]
+            },
+            {
+                "type": "each",
+                "src": "@/packing",
+                "target": "_I_PACK_ZIPS"
+            },
+            {
+                "type": "clean",
+                "src": [
+                    "tmp/BGY_*",
+                    "tmp/Bidease_*"
+                ]
+            }
+        ],
+        "UNWIND": [
+            {
+                "type": "unwind",
+                "src": "",
+                "dst": "$PROJ_DIR/build_res/project.json"
+            }
+        ],
+        "PACK_ZIPS_ALL": [
+            {
+                "type": "clean",
+                "src": "$BUILD_DIR/packed/*.zip"
+            },
+            {
+                "description": "Pack for platforms",
+                "type": "target",
+                "src": [
+                    "PACK_ZIPS"
+                ]
+            },
+            {
+                "description": "Pack all into index.zip",
+                "type": "zip",
+                "cwd": "$BUILD_DIR/packed/",
+                "src": "./*",
+                "dst": "$SUBPROJECT_v_$VERSION_UNDERSCORE.zip"
+            }
+        ],
+        "UPLOAD": [
+            {
+                "type": "target",
+                "src": [
+                    "PACK_ZIPS_ALL"
+                ]
+            },
+            {
+                "description": "Upload to server",
+                "type": "__ftp_upload",
+                "password": "OmGsTaT1",
+                "user": "omg_static",
+                "server": "64.227.117.103",
+                "url": "$STATIC_URL",
+                "path": "$STATIC_PATH",
+                "basedir": "$BUILD_DIR/packed/",
+                "src": [
+                    "*/*.html",
+                    "*/*.zip",
+                    "*.html",
+                    "*.zip",
+                    "preview.jpg"
+                ]
+            }
+        ],
+        "_I_BATCH_BUILD": [
+            {
+                "type": "copy",
+                "src": "$PROJ_DIR/pictures/picture_$NUM.png",
+                "dst": "$PROJ_DIR/bg/",
+                "name": "back.png"
+            },
+            {
+                "type": "target",
+                "src": [
+                    "PRODUCTION_ALL",
+                    "PACK_ZIPS_ALL"
+                ]
+            },
+            {
+                "type": "copy",
+                "src": "$BUILD_DIR/packed/$SUBPROJECT_v_$VERSION_UNDERSCORE.zip",
+                "dst": "output/",
+                "name": "$SUBPROJECT_$NUM_v_$VERSION_UNDERSCORE.zip"
+            }
+        ],
+        "BATCH_BUILD": [
+            {
+                "type": "target",
+                "src": [
+                    "ATLAS",
+                    "SOUNDS",
+                    "LOC_ATLASES"
+                ]
+            },
+            {
+                "type": "each",
+                "src": [
+                    {
+                        "NUM": "001"
+                    },
+                    {
+                        "NUM": "002"
+                    },
+                    {
+                        "NUM": "003"
+                    },
+                    {
+                        "NUM": "004"
+                    },
+                    {
+                        "NUM": "005"
+                    },
+                    {
+                        "NUM": "006"
+                    },
+                    {
+                        "NUM": "007"
+                    },
+                    {
+                        "NUM": "008"
+                    },
+                    {
+                        "NUM": "009"
+                    },
+                    {
+                        "NUM": "010"
+                    },
+                    {
+                        "NUM": "011"
+                    },
+                    {
+                        "NUM": "012"
+                    },
+                    {
+                        "NUM": "013"
+                    },
+                    {
+                        "NUM": "014"
+                    },
+                    {
+                        "NUM": "015"
+                    },
+                    {
+                        "NUM": "016"
+                    },
+                    {
+                        "NUM": "017"
+                    },
+                    {
+                        "NUM": "018"
+                    },
+                    {
+                        "NUM": "019"
+                    },
+                    {
+                        "NUM": "020"
+                    },
+                    {
+                        "NUM": "021"
+                    },
+                    {
+                        "NUM": "022"
+                    },
+                    {
+                        "NUM": "023"
+                    },
+                    {
+                        "NUM": "024"
+                    },
+                    {
+                        "NUM": "025"
+                    }
+                ],
+                "target": "_I_BATCH_BUILD"
+            }
+        ]
+    },
+    "editor_properties": {
+        "buildFlags": {
+            "type": "object",
+            "properties": {
+                "CHEATS": {
+                    "type": "b"
+                },
+                "SUBPROJECT": {
+                    "label": "PROJECT",
+                    "type": "ddList",
+                    "values": [
+                        "sm_playable_001",
+                        "sm_playable_002",
+                        "wp_playable_001",
+                        "sw_playable_001",
+                        "sw_playable_002",
+                        "sw_playable_003",
+                        "sw_playable_004",
+                        "rp_playable_001",
+                        "ws_playable_003",
+                        "wss_playable_003",
+                        "wp_playable_003",
+                        "wp_playable_004",
+                        "wss_playable_002",
+                        "sm_playable_003",
+                        "wss_playable_004",
+                        "rp_playable_002",
+                        "jg_playable_002",
+                        "fw_playable_002",
+                        "fw_playable_003",
+                        "sw_playable_005",
+                        "cm_playable_001",
+                        "jg_playable_003",
+                        "sw_playable_006",
+                        "wp_playable_005",
+                        "wss_playable_005",
+                        "rp_playable_004",
+                        "sm_playable_004"
+                    ]
+                },
+                "VERSION": {
+                    "type": "s"
+                },
+                "NEW_AD": {
+                    "type": "button",
+                    "t": "New Ad",
+                    "f": "Ad.newSubproject"
+                }
+            }
+        }
+    }
+}

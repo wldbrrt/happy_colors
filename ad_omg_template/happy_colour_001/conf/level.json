@@ -1,0 +1,17 @@
+{
+    "buildOpts": {
+        "fontsByLang": {"auto": "poppins_regular", "ru": ""},
+        "buildingLocales": ["auto", "ru"]
+    },
+
+    "redirect_url": {
+        "ios": "https://apps.apple.com/us/app/happy-color-by-numbers-game/id1407852246",
+        "android": "https://play.google.com/store/apps/details?id=com.pixel.art.coloring.color.number&hl=ru"
+    },
+
+    "finger_speed": 7,
+
+    "disablePortraitSafeArea": 1,
+    "disableLandscapeSafeArea": 1,
+    "colors": ["#f6dc76", "#b62c41", "#f59f4e", "#f7e0b8", "#8dc8a1"]
+}
